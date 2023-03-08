@@ -30,9 +30,11 @@ public class Main {
 
         erstesGericht.zutatHinzufügen("Pommes");
         zweiteGericht.zutatHinzufügen("Parmesan");
+        System.out.println(erstesGericht.getPreis());
+        erstesGericht.setPreis(100);
         erstesGericht.kochen();
         zweiteGericht.kochen();
-
+        System.out.println(erstesGericht.getPreis());
         // Kind
         Kind tina = new Kind("Tina", "weiblich", 3);
         Kind paul = new Kind("Paul", "männlich", 2);
